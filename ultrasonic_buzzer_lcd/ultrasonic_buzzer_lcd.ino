@@ -31,10 +31,10 @@ void loop() {
   lcd.print(" inch");
   delay(10);
 if (distanceCm < 10){
-  tone(buzzer, 5000); // Send 1KHz sound signal...
-  delay(20);        // ...for 0.1 sec
+  tone(buzzer, 5000); // Send 5KHz sound signal...
+  delay(20);        // ...for 20 milsec
   noTone(buzzer);     // Stop sound...
-  delay(20);        // ...for 0.1 sec
+  delay(20);        // ...for 20 milsec
 }
 else if (distanceCm > 10 & distanceCm < 50){
   tone(buzzer, 1000); // Send 1KHz sound signal...
